@@ -21,7 +21,7 @@ function App() {
   const [chatsLoading, setChatsLoading] = useState(true);
   const [chatsError, setChatsError] = useState(null);
 
-  function updateProfile(name) {
+  async function updateProfile(name) {
     setProfileUpdateError(null);
     setProfileUpdatingGeneralError(null);
     setProfileUpdating(true);
